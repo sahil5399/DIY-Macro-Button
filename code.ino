@@ -44,7 +44,7 @@ void press3(uint8_t k,uint8_t k2,uint8_t k3){
 
 void macro_password(){
   //Serial.println("Print the Password");
-  Keyboard.print("Sahil@786."); //Enter your Password Here
+  Keyboard.print("<Your Password Here>"); //Enter your Password Here
   delay(150);
   press1(KEY_RETURN);
   delay(100);
