@@ -67,6 +67,7 @@ if (sensorVal1 == 0) {
 
 Functions for multiple button press
 There are 3 funtions which can simulate the button press
+
 `press1(<key>)` Simulates single button press. For example, pressing funtion key f1, pressing enter key
 
 `press2(<key1> <key2>)` Simululates 2 button press. For example, pressing alt and f4 together
@@ -75,7 +76,10 @@ There are 3 funtions which can simulate the button press
 
 
 Changing the value of the valid_card variable
+
 `#define valid_card="C9 5C 19 BD";` Change the value with the UID of the NFC card which you want to use to open your laptop. The uid can be found by uploading the DumpInfo sketch from the MFRC522 example skectch
 
 ## Working and Usage
-After the wiring is done and the code is modified and uploaded, you will be able to use the nfc card to open your computer just by placing the nfc card on the receiver. Please note: If you place the card when the system is unloced, the arduino will type the password on the screen. On pressing the buttons, the assigned keystroke combination will be performed.
+After the wiring is done and the code is modified and uploaded, you will be able to use the nfc card to open your computer just by placing the nfc card on the receiver. 
+
+Please note: If you place the card when the system is unloced, the arduino will type the password on the screen. On pressing the buttons, the assigned keystroke combination will be performed.
