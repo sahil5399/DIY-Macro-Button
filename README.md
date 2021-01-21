@@ -24,13 +24,12 @@ To Attach the Buttons Connect one end to the ground of the Arduino and the other
 
 ## Code 
 Arduino Pro Micro Code: [Project Code](code.ino)
-You need to install the [MFRC522 Library]() by 
+You need to install the [MFRC522 Library](https://github.com/miguelbalboa/rfid) by [Miguelbalboa]("https://github.com/miguelbalboa/")
 ## Code Modification
 Modidyfing your code in the macro_password Function
 ```
 void macro_password(){
-  //Serial.println("Print the Password");
-  Keyboard.println("<Your Password Here"); //Enter your Password Here
+  Keyboard.print("<Your Password Here"); //Enter your Password Here
   delay(150);
   press1(KEY_RETURN); // Press Enter
   delay(100);
@@ -39,29 +38,29 @@ void macro_password(){
 ```
 Modifying the commands on the button Press
 After Wiring the Buttons, Give your macro commands inside the if statement before the delay command
-For the key reference please refer to the [Keyboard.h ]() by 
+For the key reference please refer to the [Keyboard.h ](https://github.com/arduino-libraries/Keyboard/blob/master/src/Keyboard.h)  
 ```
 if (sensorVal1 == 0) {
-    Serial.println("B1 press");
+    //Enter your macro here
     delay(250);
   }
   if (sensorVal2 == 0) {
-    Serial.println("B2 press");
+    //Enter your macro here
     delay(250);
   }
   if (sensorVal3 == 0) {
-    Serial.println("B4 press");
+    //Enter your macro here
     delay(250);
   }
   if (sensorVal4 == 0) {
-    Serial.println("B3 press");
+    //Enter your macro here
     delay(250);
   }
   if (sensorVal5 == 0) {
-    Serial.println("B6 press");
+    //Enter your macro here
   }
   if (sensorVal6 == 0) {
-    Serial.println("B5 press");
+    //Enter your macro here
     delay(250);
   } 
 ```
@@ -75,6 +74,13 @@ There are 3 funtions which can simulate the button press
 
 `press3(<key1> <key2> <key3> ` Simulates 3 button press. For example, pressing ctrl alt t together
 
+`Keyboard.print("<STRING>");` Simu;ates typing of the defined string 
+
+Examples:
+- Simulating ctrl alt t `press3(KEY_LEFT_CTRL KEY_LEFT_ALT 't');`
+- Simulating Hello World `Keyboard.print("Hello World");`
+- Simulating alt f4 ` press2(KEY_LEFT_ALT,KEY_F4);`
+- Simulating Enter key `press1(KEY_RETURN); `
 
 Changing the value of the valid_card variable
 
