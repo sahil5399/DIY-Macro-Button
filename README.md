@@ -7,7 +7,7 @@ A DIY 6 Button USB macro Keyboard made on atmega 32u4 development board with an 
 - Wires 
 ## Circuit Diagram
 
-[Circuit Diagram](CircuitDiagram.png)
+[Circuit Diagram](CircuitDiagram.png?raw=true)
 
 ## Connection Matrix
 |Arduino Pro Micro | MFRC 522 |
