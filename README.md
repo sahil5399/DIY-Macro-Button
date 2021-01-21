@@ -39,7 +39,8 @@ void macro_password(){
 Modifying the commands on the button Press
 After Wiring the Buttons, Give your macro commands inside the if statement before the delay command
 For the key reference please refer to the [Keyboard.h ]() by 
-```if (sensorVal1 == 0) {
+```
+if (sensorVal1 == 0) {
     Serial.println("B1 press");
     delay(250);
   }
@@ -67,8 +68,11 @@ For the key reference please refer to the [Keyboard.h ]() by
 Functions for multiple button press
 There are 3 funtions which can simulate the button press
 `press1(<key>)` Simulates single button press. For example, pressing funtion key f1, pressing enter key
+
 `press2(<key1> <key2>)` Simululates 2 button press. For example, pressing alt and f4 together
+
 `press3(<key1> <key2> <key3> ` Simulates 3 button press. For example, pressing ctrl alt t together
+
 
 Changing the value of the valid_card variable
 `#define valid_card="C9 5C 19 BD";` Change the value with the UID of the NFC card which you want to use to open your laptop. The uid can be found by uploading the DumpInfo sketch from the MFRC522 example skectch
