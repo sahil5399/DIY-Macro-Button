@@ -73,5 +73,5 @@ There are 3 funtions which can simulate the button press
 Changing the value of the valid_card variable
 `#define valid_card="C9 5C 19 BD";` Change the value with the UID of the NFC card which you want to use to open your laptop. The uid can be found by uploading the DumpInfo sketch from the MFRC522 example skectch
 
-##Working and Usage
+## Working and Usage
 After the wiring is done and the code is modified and uploaded, you will be able to use the nfc card to open your computer just by placing the nfc card on the receiver. Please note: If you place the card when the system is unloced, the arduino will type the password on the screen. On pressing the buttons, the assigned keystroke combination will be performed.
