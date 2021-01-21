@@ -85,7 +85,7 @@ Examples:
 
 Changing the value of the valid_card variable
 
-`#define valid_card="C9 5C 19 BD";` Change the value with the UID of the NFC card which you want to use to open your laptop. 
+`const String valid_card = "C9 5C 19 BD";` Change the value with the UID of the NFC card which you want to use to open your laptop. 
 
 The uid can be found by uploading the DumpInfo sketch from the MFRC522 example skectch
 
