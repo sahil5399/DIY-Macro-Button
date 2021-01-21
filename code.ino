@@ -19,7 +19,7 @@
 
 #define RST_PIN         9          // Configurable, see typical pin layout above
 #define SS_PIN          10         // Configurable, see typical pin layout above
-#define valid_card="C9 5C 19 BD";
+const String valid_card = "C9 5C 19 BD"; //Edit this with uid of the nfc card
 MFRC522 rfid(SS_PIN, RST_PIN);  // Create rfid instance
 
 String content = "";
